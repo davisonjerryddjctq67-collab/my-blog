@@ -1,3 +1,14 @@
-body{
-    background-color:#f0f0f0;
-}
+:root{--primary:#4F46E5;--primary-dark:#4338CA;--bg:#f0f0f0;--card-bg:#ffffff;--text:#1f2937;--text-light:#6b7280;}
+body{background-color:var(--bg);}
+.nav-menu{display:flex;justify-content: space-around;list-style: none;padding:0;}
+.nav-menu a{text-decoration:none;color:var(--text);padding: 10px 20px; background-color:var(--card-bg);border-radius: 5px;}
+.article-cards{ display: flex; gap: 20px; flex-wrap: wrap;}
+.card{background-color:var(--card-bg);padding: 20px;border-radius: 8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);flex: 1;min-width: 250px;}
+.card h3{margin-top: 0;}
+.card a{text-decoration: none;color: var(--primary);}
+.main-nav{display:flex; gap:20px;margin-bottom:30px;}
+.main-nav a{ text-decoration: none;color: var(--text);font-weight:bold;}
+.about-content{max-width: 800px; margin: 0 auto;padding : 20px;background-color: var(--card-bg);border-radius: 8px;}
+@media (max-width:600px){.article-cards{flex-direction: column;}
+.card{ min-width: 100%;}
+.nav-menu{ flex-direction: column; gap: 10px;}}
